@@ -68,10 +68,11 @@ section {
   flex-grow: 1;
 }
 
-.home-text {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  border-radius: 5px;
+.home-text, .home-body h1, .home-body h2, .home-body p {
+  background-color: rgba(255, 255, 255, 0.8); /* Ensure readability */
+  color: #333; /* Good contrast for readability */
+  padding: 10px; /* Adequate padding for text */
+  border-radius: 5px; /* Softened edges for style */
 }
 
 @media (max-width: 800px) {
