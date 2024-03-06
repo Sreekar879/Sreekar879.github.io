@@ -7,7 +7,9 @@
     /* CSS styles */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      background-image: url('img/Kitchen1.jpg'); /* Updated line */
+      background-size: cover; /* Cover the entire page */
+      background-position: center; /* Center the background image */
       color: #333;
       margin: 0;
       padding: 0;
@@ -19,7 +21,7 @@
     }
 
     nav a {
-      color: green;
+      color: white; /* Changed to white for better visibility against the background */
       text-decoration: none;
       margin-right: 10px;
     }
@@ -30,11 +32,13 @@
       font-size: 28px;
       text-align: center;
       margin-top: 20px;
+      color: white; /* Changed to white for better visibility */
     }
 
     h2, p {
       font-weight: bold;
       padding: 0 20px;
+      color: white; /* Changed to white for better visibility */
     }
 
     .content {
@@ -49,11 +53,7 @@
     }
 
     .image-content img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
+      display: none; /* Hide the image since the background is now used */
     }
 
     @media (max-width: 800px) {
@@ -79,10 +79,6 @@
       <p>Explore our collection of recipes and transform your meals into unforgettable experiences. From breakfast to dinner and everything in between, discover new flavors and classic dishes all in one place.</p>
       <p>Our website is dedicated to food lovers everywhere. Whether you're a seasoned chef or just starting out, you'll find recipes to suit every taste and skill level. Dive into our culinary world and let your taste buds be your guide!</p>
       <p>Check out the most popular recipes on <a href="https://www.foodnetwork.com/">Food Network</a>.</p>
-    </div>
-    <div class="image-content">
-      <img src="Kitchen1.jpg" alt="Kitchen">
-    </div>
-  </div>
+    
 </body>
 </html>
