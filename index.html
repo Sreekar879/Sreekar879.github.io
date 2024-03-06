@@ -7,34 +7,32 @@
     /* CSS styles */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      background-image: url('Kitchen1.jpg'); /* Set the background image */
+      background-size: cover; /* Cover the entire page */
+      background-position: center; /* Center the background image */
       color: #333;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh; /* Full viewport height */
     }
 
     nav {
-      background-color: #4caf50;
+      background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background */
       padding: 10px;
     }
 
     nav a {
-      color: green;
+      color: white; /* Change text color for better visibility */
       text-decoration: none;
       margin-right: 10px;
     }
 
-    /* Serif font style for h1 elements */
-    h1 {
-      font-family: 'Georgia', serif;
-      font-size: 28px;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    h2, p {
-      font-weight: bold;
-      padding: 0 20px;
+    h1, h2, p {
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for text */
+      padding: 10px; /* Add padding */
+      border-radius: 5px; /* Optional: rounded corners for text backgrounds */
     }
 
     .content {
@@ -42,18 +40,11 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px;
+      flex-grow: 1; /* Take up available space */
     }
 
-    .text-content, .image-content {
-      flex-basis: 50%;
-    }
-
-    .image-content img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
+    .text-content {
+      flex-basis: 100%;
     }
 
     @media (max-width: 800px) {
@@ -79,9 +70,6 @@
       <p>Explore our collection of recipes and transform your meals into unforgettable experiences. From breakfast to dinner and everything in between, discover new flavors and classic dishes all in one place.</p>
       <p>Our website is dedicated to food lovers everywhere. Whether you're a seasoned chef or just starting out, you'll find recipes to suit every taste and skill level. Dive into our culinary world and let your taste buds be your guide!</p>
       <p>Check out the most popular recipes on <a href="https://www.foodnetwork.com/">Food Network</a>.</p>
-    </div>
-    <div class="image-content">
-      <img src="Kitchen1.jpg" alt="Kitchen">
     </div>
   </div>
 </body>
