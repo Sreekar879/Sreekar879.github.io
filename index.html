@@ -6,38 +6,60 @@
   <style>
     /* CSS styles */
     body {
-      font-family: Arial, sans-serif; /* Change font family */
-      background-color: #f7f7f7; /* Change background color */
-      color: #333; /* Change text color */
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
     }
 
     nav {
-      background-color: #4caf50; /* Change navigation background color */
+      background-color: #4caf50;
       padding: 10px;
     }
 
     nav a {
-      color: green; /* First styling change: color */
-      text-decoration: none; /* Remove underline */
+      color: green;
+      text-decoration: none;
       margin-right: 10px;
     }
 
     /* Serif font style for h1 elements */
     h1 {
       font-family: 'Georgia', serif;
-      font-size: 28px; /* Second styling change: font-size */
-      text-align: center; /* Center align heading */
-      margin-top: 20px; /* Add some top margin */
+      font-size: 28px;
+      text-align: center;
+      margin-top: 20px;
     }
 
-    h2 {
-      text-decoration: underline; /* Added styling change: text-decoration */
+    h2, p {
+      font-weight: bold;
+      padding: 0 20px;
     }
 
-    p {
-      font-weight: bold; /* Third styling change: font-weight */
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .text-content, .image-content {
+      flex-basis: 50%;
+    }
+
+    .image-content img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 800px) {
+      .content {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -50,14 +72,17 @@
     <a href="dessert.html">Dessert Recipes</a>
   </nav>
 
-  <h1>Welcome to Food Paradise</h1>
-  <h2>Your Ultimate Guide to Delicious Recipes</h2>
-  <p>Explore our collection of recipes and transform your meals into unforgettable experiences. From breakfast to dinner and everything in between, discover new flavors and classic dishes all in one place.</p>
-
-  <img src="Kitchen1.jpg" alt="Kitchen" style="width:100%;">
-
-  <p>Our website is dedicated to food lovers everywhere. Whether you're a seasoned chef or just starting out, you'll find recipes to suit every taste and skill level. Dive into our culinary world and let your taste buds be your guide!</p>
-  
-  <p>Check out the most popular recipes on <a href="https://www.foodnetwork.com/">Food Network</a>.</p>
+  <div class="content">
+    <div class="text-content">
+      <h1>Welcome to Food Paradise</h1>
+      <h2>Your Ultimate Guide to Delicious Recipes</h2>
+      <p>Explore our collection of recipes and transform your meals into unforgettable experiences. From breakfast to dinner and everything in between, discover new flavors and classic dishes all in one place.</p>
+      <p>Our website is dedicated to food lovers everywhere. Whether you're a seasoned chef or just starting out, you'll find recipes to suit every taste and skill level. Dive into our culinary world and let your taste buds be your guide!</p>
+      <p>Check out the most popular recipes on <a href="https://www.foodnetwork.com/">Food Network</a>.</p>
+    </div>
+    <div class="image-content">
+      <img src="Kitchen1.jpg" alt="Kitchen">
+    </div>
+  </div>
 </body>
 </html>
