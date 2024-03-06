@@ -1,0 +1,81 @@
+/* Shared Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #4caf50;
+  padding: 10px;
+}
+
+nav a {
+  color: green;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #4caf50;
+  text-decoration: underline;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #4caf50;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p, li {
+  font-weight: bold;
+}
+
+section {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Styles for the Home Page */
+.home-body {
+  background-image: url('Kitchen1.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.home-text {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .home-content {
+    flex-direction: column;
+  }
+}
