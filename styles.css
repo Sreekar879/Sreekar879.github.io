@@ -52,7 +52,7 @@ section {
 
 /* Specific Styles for the Home Page */
 .home-body {
-  background-image: url('Kitchen1.jpg');
+  background-image: url('.../img/Kitchen1.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
